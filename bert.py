@@ -28,4 +28,4 @@ def get_vectors(data, model, tokeniser):
         with torch.no_grad():
             vectors.append(
                     model(input_ids)[0].squeeze().tolist()[0])
-
+    return vectors
